@@ -1,0 +1,8 @@
+f1=open(r"C:\Users\agrim\OneDrive\Desktop\vision.txt","r")
+a=f1.read()
+f2=open(r"C:\Users\agrim\OneDrive\Desktop\valley.txt","w")
+f2.write(a)
+a1=f2.read()
+print(a1)
+f1.close()
+f2.close()
