@@ -1,0 +1,13 @@
+n=5 #number of nodes
+m=6 #number of edges
+
+edges=[[1,2],[2,4],[3,4],[1,3],[3,5],[5,4]]
+ 
+lst=[[[] for _ in range(n+1)] for _ in range(n+1)]
+#print(lst)
+
+for i in lst:
+    for u,v in edges:
+        i[u].append(v)
+        i[v].append(u)
+print(lst)              
